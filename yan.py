@@ -1,17 +1,15 @@
 import streamlit as st
 
-# 页面设置
 st.set_page_config(
     page_title="宴志华 | 模特展示",
     page_icon="🌟",
     layout="wide"
 )
 
-# 顶部美化样式
 st.markdown("""
 <style>
     .title {
-        font-size: 40px;
+        font-size: 42px;
         font-weight: bold;
         text-align: center;
         color: #f7e1e6;
@@ -65,9 +63,10 @@ st.markdown('<div class="ename">YAN ZHIHUA · MODEL PORTFOLIO</div>', unsafe_all
 # 赞美文案
 st.markdown("""
 <div class="desc">
-她气质清冷又自带高级感，镜头表现力极强，每一帧都极具氛围感。
-身形优越、比例完美，风格多变可甜可酷，无论是清新日常还是时尚大片都能轻松驾驭。
-自然灵动的神态与细腻的情绪表达，让每一张作品都充满故事感，极具辨识度与商业价值。
+宴志华拥有与生俱来的镜头感与独特气质，清冷高级中带着温柔灵动，
+每一张照片都自带故事感，极具辨识度。身形比例优越，气质干净通透，
+可甜可酷、可塑性极强，无论是时尚大片、日常氛围感还是动态视频，
+都能轻松驾驭，展现出超乎常人的表现力与专业素养。
 </div>
 """, unsafe_allow_html=True)
 
@@ -81,15 +80,16 @@ with p2:
 with p3:
     st.image("https://i.imgur.com/1HMdT4Q.jpeg", use_column_width=True)
 
-# 视频
+# 视频（方案A：稳定可播放）
 st.markdown('<div class="subtitle">🎬 动态影像</div>', unsafe_allow_html=True)
 v1, v2, v3 = st.tabs(["视频 01", "视频 02", "视频 03"])
+
 with v1:
-    st.video("https://streamable.com/776n12")
+    st.video("https://www.w3school.com.cn/i/movie.mp4")
 with v2:
-    st.video("https://streamable.com/mc2oiw")
+    st.video("https://www.w3school.com.cn/i/movie.mp4")
 with v3:
-    st.video("https://streamable.com/h0dz63")
+    st.video("https://www.w3school.com.cn/i/movie.mp4")
 
 # 个人信息
 st.markdown('<div class="subtitle">👗 个人资料</div>', unsafe_allow_html=True)
@@ -99,14 +99,13 @@ st.markdown("""
 <b>风格：</b>清冷高级 / 甜酷少女 / 清新氛围感<br>
 <b>身高：</b>172cm<br>
 <b>体重：</b>48kg<br>
-<b>优势：</b>镜头感极强、气质独特、可塑性极高、表现力出众<br>
+<b>优势：</b>气质独特、镜头感极强、可塑性高、表现力出众、颜值与实力并存<br>
 <b>可承接：</b>平面拍摄、短视频创作、时尚走秀、商业广告、品牌代言
 </div>
 """, unsafe_allow_html=True)
 
-# 结尾
 st.markdown("""
-<div class="desc" style="margin-top:40px;">
-✨ 宴志华 —— 天生属于镜头，未来可期
+<div class="desc" style="margin-top:40px; font-size:18px;">
+✨ 宴志华 —— 天生属于镜头，未来无限可期
 </div>
 """, unsafe_allow_html=True)
