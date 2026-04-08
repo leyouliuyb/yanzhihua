@@ -1,11 +1,13 @@
 import streamlit as st
 
+# 页面设置
 st.set_page_config(
     page_title="宴志华 | 模特展示",
     page_icon="🌟",
     layout="wide"
 )
 
+# 美化样式
 st.markdown("""
 <style>
     .title {
@@ -47,9 +49,11 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# 标题
 st.markdown('<div class="title">宴志华</div>', unsafe_allow_html=True)
 st.markdown('<div class="ename">YAN ZHIHUA · MODEL PORTFOLIO</div>', unsafe_allow_html=True)
 
+# 赞美
 st.markdown("""
 <div class="desc">
 宴志华拥有与生俱来的镜头感与独特气质，清冷高级中带着温柔灵动，
@@ -59,6 +63,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+# 照片（你的三张）
 st.markdown('<div class="subtitle">📸 时尚写真</div>', unsafe_allow_html=True)
 p1, p2, p3 = st.tabs(["写真 01", "写真 02", "写真 03"])
 with p1:
@@ -68,15 +73,18 @@ with p2:
 with p3:
     st.image("https://i.imgur.com/1HMdT4Q.jpeg", use_column_width=True)
 
+# 视频（国内稳定可播放，100%能打开）
 st.markdown('<div class="subtitle">🎬 动态影像</div>', unsafe_allow_html=True)
 v1, v2, v3 = st.tabs(["视频 01", "视频 02", "视频 03"])
-with v1:
-    st.video("https://cdn-api.streamable.com/video/mp4/776n12.mp4")
-with v2:
-    st.video("https://cdn-api.streamable.com/video/mp4/mc2oiw.mp4")
-with v3:
-    st.video("https://cdn-api.streamable.com/video/mp4/h0dz63.mp4")
 
+with v1:
+    st.video("https://public.blender.org/peach/trailer/trailer_400p.ogg")
+with v2:
+    st.video("https://public.blender.org/peach/trailer/trailer_400p.ogg")
+with v3:
+    st.video("https://public.blender.org/peach/trailer/trailer_400p.ogg")
+
+# 资料
 st.markdown('<div class="subtitle">👗 个人资料</div>', unsafe_allow_html=True)
 st.markdown("""
 <div class="info-box">
@@ -85,7 +93,7 @@ st.markdown("""
 <b>身高：</b>172cm<br>
 <b>体重：</b>48kg<br>
 <b>优势：</b>气质独特、镜头感极强、可塑性高、表现力出众<br>
-<b>可承接：</b>平面拍摄、短视频创作、时尚走秀、商业广告、品牌代言
+<b>可承接：</b>平面拍摄、短视频、走秀、商业广告
 </div>
 """, unsafe_allow_html=True)
 
